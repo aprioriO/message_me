@@ -60,4 +60,7 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   # config.action_cable.disable_request_forgery_protection = true
   # config.action_cable.allowed_request_origins = ['https://olena-message-me.herokuapp.com/']
+  # ENV["REDISTOGO_URL"] = 'redis://username:password@my.host:6389'
+  ENV["REDISTOGO_URL"] = 'redis://redistogo:ff4b5eddc4b641982ce6086edf42b6a0@pearlfish.redistogo.com:10260/'
+
 end
