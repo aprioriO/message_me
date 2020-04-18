@@ -9,13 +9,13 @@
       <% if logged_in? %>
         <%= link_to "Logout", logout_path, method: :delete, class: "item" %>
       <% else %>
-        <%= link_to "Log in", login_path, class: "item" %>
+        <%= link_to "Log in", login_path, class: "violet item" %>
       <% end %>
     </div>
   </div>
   <% if !logged_in? %>
     <div class="item">
-      <%= link_to "Log in", login_path, class: "ui primary button" %>
+      <%= link_to "Log in", login_path, class: "ui  violet button" %>
     </div>
   <% end %>
 </div>
